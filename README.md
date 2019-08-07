@@ -53,3 +53,7 @@ activate ml-agents
 jupyter notebook
 ```
 
+- Or run `navigation.py` to train.
+```
+python navigation.py
+```
