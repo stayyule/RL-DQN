@@ -35,9 +35,21 @@ This repository is also a project of Udacity's [Deep Reinforcement Learning Nano
     
 2. Place the file under root folder of the repository, and unzip (or decompress) the file. 
 
+3. Install [Anaconda](https://www.anaconda.com/)
+
+4. Run code in anaconda prompt to setup python environment
+```
+conda env create -f environment.yaml
+```
 
 ### Instructions
 
-- If you are familiar with [Anaconda](https://www.anaconda.com/), follow the instructions in `Navigation.ipynb` to get started with training agent step by step!  
-
+- Activate ml-agents environment with code
+```
+activate ml-agents
+```
+- Follow the instructions in `Navigation.ipynb` to get started with training agent step by step!  
+```
+jupyter notebook
+```
 
