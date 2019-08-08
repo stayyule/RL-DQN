@@ -2,7 +2,7 @@ import sys
 sys.path.append("./python/")
 
 from unityagents import UnityEnvironment
-from agent import *
+from base_agent import *
 
 
 agent = Agent(state_size=37, action_size=4, seed=0)
@@ -62,7 +62,7 @@ def train(n_episodes=2000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.
                 break
     return scores
 
-# scores = train(n_episodes=20, max_t=10)
-scores = train()
+scores = train(n_episodes=20, max_t=10)
+# scores = train()
 
 env.close()
