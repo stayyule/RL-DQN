@@ -25,7 +25,7 @@ The Agent is a DQN written in .[pytorch](https://https://pytorch.org). This DQN 
 This repository is also a project of Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program, check out for more instructions there.  
 
 
-### Environment setup
+### Installation
 
 1. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
@@ -42,18 +42,22 @@ This repository is also a project of Udacity's [Deep Reinforcement Learning Nano
 conda env create -f environment.yaml
 ```
 
-### Instructions
+### Run the exercise
 
 - Activate ml-agents environment with code
 ```
 activate ml-agents
 ```
-- Follow the instructions in `Navigation.ipynb` to get started with training agent step by step!  
+- There're several instructions notebook
+`Navigation.ipynb` to get started with training agent step by step! 
+`Report.ipynb` to read details for design and implementation.
+To open these instructions, get to repository folder and type in anaconda prompt:
 ```
 jupyter notebook
 ```
 
-- Or run `navigation.py` to train.
+- You can simply run `navigation.py` to train.
 ```
 python navigation.py
 ```
+A Unity window will pop up and show the process of training. The score will prompt in console and trained model will be saved.
