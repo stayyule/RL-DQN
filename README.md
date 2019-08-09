@@ -67,7 +67,7 @@ A Unity window will pop up and show the process of training. The score will prom
 Neural network has an input size of 37 and hidden layers size of 64 and output size of 4.
 
 ![nn](./nn.svg)
-![agent_network](./agent_network.png)
+![agent_network](./agent_network.PNG)
 
 Other hyperparameters:
 ```python
