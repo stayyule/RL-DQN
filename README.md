@@ -20,7 +20,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The Agent is a DQN written in .[pytorch](https://https://pytorch.org). This DQN models can get an average of 15+ points over 100 consecutive episodes.
+The Agent is a DQN written in [pytorch](https://https://pytorch.org). This DQN models can get an average of 15+ points over 100 consecutive episodes.
 
 This repository is also a project of Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program, check out for more instructions there.  
 
@@ -61,3 +61,52 @@ jupyter notebook
 python navigation.py
 ```
 A Unity window will pop up and show the process of training. The score will prompt in console and trained model will be saved.
+
+### Network and Hyperparameters
+
+Neural network has an input size of 37 and hidden layers size of 64 and output size of 4.
+
+![nn](./nn.svg)
+![agent_network](./agent_network.png)
+
+Other hyperparameters:
+```python
+BUFFER_SIZE = int(1e5)  # replay buffer size
+BATCH_SIZE = 64         # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR = 5e-4               # learning rate 
+UPDATE_EVERY = 4        # how often to update the network
+```
+
+`BUFFER_SIZE` is the pool size of experience replayer. The old experience will be replaced with new one after this pool is full.
+
+`BATCH_SIZE` is the number of experiences used to train the models in every update.
+
+`GAMMA` is the discount factor $\gamma$
+
+`TAU` is the update rate for soft update $\tau$
+
+`LR` is learning rate for Q network optimizer.
+
+`UPDATE_EVERY` defines the time steps for every update.
+
+`eps` parameter for epsilon greedy policy. The posibility to explore the new actions.
+
+### Result
+
+This agent collect an average of 13+ in 100 episodes and finish it in 600 epsiodes.
+
+Episode 100	Average Score: 0.97
+
+Episode 200	Average Score: 4.52
+
+Episode 300	Average Score: 8.18
+
+Episode 400	Average Score: 10.72
+
+Episode 500	Average Score: 12.82
+
+Episode 600	Average Score: 14.44
+
+![result](./result.png)
