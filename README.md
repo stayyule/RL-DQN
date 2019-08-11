@@ -1,4 +1,4 @@
-[![Platform](https://img.shields.io/badge/Platform-Pytorch-orange.svg)](https://https://pytorch.org)
+[![Platform](https://img.shields.io/badge/Platform-Pytorch-orange.svg)](https://pytorch.org)
 [![Python](https://img.shields.io/badge/Python-3.6-green.svg)]()
 
 [//]: # (Image References)
