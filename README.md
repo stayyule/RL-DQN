@@ -47,15 +47,15 @@ conda env create -f environment.yaml
 ```
 activate ml-agents
 ```
-- There're several instructions notebook
+- There're several instructions notebook under `/report`. Open 
 `Navigation.ipynb` to get started with training agent step by step! 
-`Report.ipynb` to read details for design and implementation.
+Open `Report.ipynb` to read details for design and implementations.
 To open these instructions, get to repository folder and type in anaconda prompt:
 ```
 jupyter notebook
 ```
 
-- You can simply run `navigation.py` to train.
+- You can simply run `/dqn/navigation.py` to train.
 ```
 python navigation.py
 ```
@@ -65,8 +65,8 @@ A Unity window will pop up and show the process of training. The score will prom
 
 Neural network has an input size of 37 and hidden layers size of 64 and output size of 4.
 
-![nn](./nn.svg)
-![agent_network](./agent_network.PNG)
+![nn](./report/nn.svg)
+![agent_network](./report/agent_network.PNG)
 
 Other hyperparameters:
 ```python
@@ -94,4 +94,4 @@ Episode 500	Average Score: 12.82
 
 Episode 600	Average Score: 14.44
 
-![result](./result.png)
+![result](./report/result.png)
