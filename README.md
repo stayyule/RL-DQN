@@ -1,3 +1,5 @@
+[![Platform](https://img.shields.io/badge/Platform-Pytorch-orange.svg)](https://https://pytorch.org)
+[![Python](https://img.shields.io/badge/Python-3.6s-green.svg)]()
 
 [//]: # (Image References)
 
@@ -20,10 +22,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-The Agent is a DQN written in [pytorch](https://https://pytorch.org). This DQN models can get an average of 15+ points over 100 consecutive episodes.
-
 This repository is also a project of Udacity's [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893) program, check out for more instructions there.  
-
 
 ### Installation
 
@@ -78,20 +77,6 @@ TAU = 1e-3              # for soft update of target parameters
 LR = 5e-4               # learning rate 
 UPDATE_EVERY = 4        # how often to update the network
 ```
-
-`BUFFER_SIZE` is the pool size of experience replayer. The old experience will be replaced with new one after this pool is full.
-
-`BATCH_SIZE` is the number of experiences used to train the models in every update.
-
-`GAMMA` is the discount factor $\gamma$
-
-`TAU` is the update rate for soft update $\tau$
-
-`LR` is learning rate for Q network optimizer.
-
-`UPDATE_EVERY` defines the time steps for every update.
-
-`eps` parameter for epsilon greedy policy. The posibility to explore the new actions.
 
 ### Result
 
