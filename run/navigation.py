@@ -2,10 +2,11 @@ import sys
 sys.path.append("../python/")
 
 from unityagents import UnityEnvironment
-from base_agent import *
+from agent import *
 
 
-agent = Agent(state_size=37, action_size=4, seed=0)
+# agent = DQNAgent(state_size=37, action_size=4, seed=0)
+agent = DDQNAgent(state_size=37, action_size=4, seed=0)
 
 # interact with environment
 env = UnityEnvironment(file_name="../Banana_Windows_x86_64/Banana.exe")
@@ -62,7 +63,7 @@ def train(n_episodes=2000, max_t=1000, eps_start=1.0, eps_end=0.01, eps_decay=0.
                 break
     return scores
 
-#scores = train(n_episodes=20, max_t=10)
+# scores = train(n_episodes=20, max_t=10)
 scores = train()
 
 env.close()
